@@ -1,0 +1,35 @@
+﻿body {
+    padding-bottom: 20px;
+    font-family: Arial;
+    font-size: 12pt;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+input[type="text"]
+{
+    width: 400px;
+}
+
+.center {
+    text-align: center;
+}
+.term {
+    color: red;
+    text-decoration: underline;
+    font-weight:bold
+}
+.row {
+    border: 1px solid black;
+    margin: auto;
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+div[class="list"] span {
+    background-color: #CCCCCC;
+    margin-right: 10px;
+}
