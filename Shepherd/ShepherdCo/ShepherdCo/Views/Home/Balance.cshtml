@@ -1,0 +1,27 @@
+﻿@model ShepherdCoAPI.Model.User
+<div class="modal-body">
+    <fieldset>
+        <legend>Update balance of @Model.Login</legend>
+        <p>
+            Balance:<input type="text" style="width: 75px" maxlength="9" id="userBalance" value="@Model.Balance"/>
+        </p>
+    </fieldset>
+    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+    <button type="submit" id="approve-btn" class="btn btn-success">Update</button>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        $('#approve-btn').click(function() {
+            var val = $('#userBalance').val();
+            if (isNaN(val)) {
+                alert('Balance must be a number');
+            } else {
+                UpdateBalance('@Model.Login', val, @Model.UserId);
+            }
+        });
+        });
+</script>
+
+
+

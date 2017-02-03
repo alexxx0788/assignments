@@ -1,0 +1,16 @@
+﻿<div class="modal-body">
+    <fieldset>
+        <legend>Do you realy want to reload stocks?</legend>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="submit" id="approve-btn" class="btn btn-danger">Reload</button>
+    </fieldset>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        $('#approve-btn').click(function() {
+            ReloadStocks();
+            CloseModal();
+        });
+    });
+</script>
